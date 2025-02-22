@@ -28,7 +28,9 @@ class Form extends React.Component {
                     </label>
                     <input type='time' step='1' name='time' id='time' value={this.state.time} onChange={event => this.setState({...this.state, time: event.target.value})} min='00:00:00' max='01:30:00' required/>
                 </div>
-                <Button>Adicionar</Button>
+                <Button type='submit'>
+                    Adicionar
+                </Button>
             </form>
         )
     }
