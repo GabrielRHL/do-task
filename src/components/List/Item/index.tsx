@@ -1,5 +1,5 @@
 import { TasksInterface } from '../../../types/task';
-import style from '../List.module.scss'
+import style from './Item.module.scss'
 
 interface Props extends TasksInterface {
     selectTask : (selectedTask: TasksInterface) => void
