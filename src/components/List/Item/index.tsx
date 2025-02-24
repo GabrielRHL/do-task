@@ -1,9 +1,13 @@
 import { TasksInterface } from '../../../types/task';
 import style from '../List.module.scss'
 
-function Item({ name, time, selected, completed, id }: TasksInterface) {
+interface Props extends TasksInterface {
+    selectTask : (selectedTask: TasksInterface) => void
+}
+
+function Item({ name, time, selected, completed, id, selectTask }: Props) {
     return (
-        <li className={style.item}>
+        <li className={style.item} onClick={() => selectTask({name, time, selected, completed, id})}>
             <h3>{name}</h3>
             <span>{time}</span>
         </li>
