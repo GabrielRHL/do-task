@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { TasksInterface } from "../../types/task";
 import Button from "../Button";
 import Clock from "./Clock";
@@ -11,15 +11,18 @@ interface Props {
 
 function Timer({ selected }: Props) {
     const [time, setTime] = useState<number>()
-    if(selected?.time) {
-        setTime(timeToSeconds(selected.time))
-    }
+
+    useEffect( () => {
+        if(selected?.time) {
+            setTime(timeToSeconds(selected.time))
+        }
+    }, [selected])
+
     return (
         <div className={style.timer}>
             <p className={style.title}>Escolha um card e inicie o temporizador</p>
-            Tempo: {time}
             <div className={style.clockWrapper}>
-                <Clock />
+                <Clock time={time}/>
             </div>
             <Button>Começar</Button>
         </div>
