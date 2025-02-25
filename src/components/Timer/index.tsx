@@ -7,9 +7,10 @@ import { timeToSeconds } from "../../common/utils/time";
 
 interface Props {
     selected: TasksInterface | undefined
+    finishTask: () => void
 }
 
-function Timer({ selected }: Props) {
+function Timer({ selected, finishTask }: Props) {
     const [time, setTime] = useState<number>()
 
     useEffect( () => {
@@ -24,6 +25,7 @@ function regressive(count: number = 0) {
             setTime(count - 1)
             return regressive(count - 1)
         }
+        finishTask()
     }, 1000)
 }
 
