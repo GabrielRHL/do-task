@@ -21,9 +21,9 @@ function Form({setTasks}: Props) {
         <form className={style.newTask} onSubmit={addTask}>
             <div className={style.inputContainer}>
                 <label htmlFor='task'>
-                    Adicione um novo estudo
+                    Adicione uma nova tarefa
                 </label>
-                <input type='text' name='task' id='task' placeholder='O que você quer estudar?' value={name} onChange={event => setTask(event.target.value)} required/>
+                <input type='text' name='task' id='task' placeholder='O que você quer fazer?' value={name} onChange={event => setTask(event.target.value)} required/>
             </div>
             <div className={style.inputContainer}>
                 <label htmlFor='time'>
