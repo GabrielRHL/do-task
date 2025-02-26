@@ -9,7 +9,7 @@
 
 <img src="/src/assets/img/site-dotask.png" alt="Exemplo imagem">
 
-> 
+> O site DoTask possui a ideia de ajudar as pessoas com as tarefas do seu dia com um cronômetro que indica quanto tempo foi dedicado na mesma.
 
 ## ✅ Status do projeto
 
@@ -17,7 +17,10 @@ Este projeto está finalizado e não há planos para novas funcionalidades ou at
 
 ## 🔨 Funcionalidades
 
-- 
+- Adicionar tarefas livremente.
+- Inserir o tempo de cada tarefa.
+- Selecionar a tarefa a ser feita no momento, com seu respectivo tempo sendo exibido no cronômetro.
+- Iniciar cronômetro.
 
 ## 💻 Tecnologias
 
