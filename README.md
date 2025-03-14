@@ -36,7 +36,7 @@ Este projeto está finalizado e não há planos para novas funcionalidades ou at
 
 1. Clone o repositório:
 ```bash
-    git clone https://github.com/seu-usuario/seu-repositorio.git
+    git clone https://github.com/GabrielRHL/do-task
 ```
 
 2. Entre no diretório do projeto:
